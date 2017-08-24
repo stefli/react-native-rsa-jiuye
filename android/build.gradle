@@ -41,4 +41,5 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
+    compile files('libs/bcprov-jdk15on-1.55.jar')
 }
