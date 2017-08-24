@@ -25,12 +25,16 @@ public class RSAUtilsModule extends ReactContextBaseJavaModule {
 
 
     @ReactMethod
-    public String encrypt(String plainText, String modulus, String exponent) {
-        String encryptString = RSAUtils.encrypt(plainText, modulus, exponent);
-        if (encryptString != null) {
-            return encryptString;
-        } else {
-            return plainText;
+    public void encrypt(String plainText, String modulus, String exponent, Promise promise) {
+        try {
+            String encryptString = RSAUtils.encrypt(plainText, modulus, exponent);
+            if (encryptString != null) {
+                promise.resolve(encryptString);
+            } else {
+                promise.reject("error", "Result is null");
+            }
+        } catch (Exception e) {
+            promise.reject("error", e.getMessage());
         }
     }
 
