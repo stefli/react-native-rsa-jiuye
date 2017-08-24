@@ -1,6 +1,5 @@
 /**
  * Copyright (c) 2017, Jiuye SCM and/or its affiliates. All rights reserved.
- *
  */
 package com.jiuyescm.rsa;
 
@@ -26,16 +25,12 @@ public class RSAUtilsModule extends ReactContextBaseJavaModule {
 
 
     @ReactMethod
-    public void encrypt(String plainText, String modulus, String exponent, Promise promise) {
-        try {
-            String encryptString = RSAUtils.encrypt(plainText, modulus, exponent);
-            if (encryptString != null) {
-                promise.resolve(encryptString);
-            } else {
-                promise.reject("error...", "encryptString is nil!");
-            }
-        } catch ( Exception exce ) {
-            promise.reject("error ...", exce.getMessage());
+    public String encrypt(String plainText, String modulus, String exponent, Promise promise) {
+        String encryptString = RSAUtils.encrypt(plainText, modulus, exponent);
+        if (encryptString != null) {
+            return encryptString;
+        } else {
+            return plainText;
         }
     }
 
