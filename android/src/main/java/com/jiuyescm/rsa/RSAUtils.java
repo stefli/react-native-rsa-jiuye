@@ -115,10 +115,4 @@ public class RSAUtils {
         return null;
     }
 
-    public static void main(String[] args) {
-        String modulus = "0092a947f9432fd8aa6c79d794f3bd07cf50c8827c69919d221213814a69d1667ca3bee1bbe27d0d50f97497f2d2f6f18de05881d7e24b08c1c7eddf828a9b5b0ed868fcecc14ce5045372d56bfe13172cbd1a96498e9ac1d20abf4687620215a7b1458d93fca7946cad99ff41f1308816ab3be3d6ffb754d06e1d3b7dfe635bfd";
-        String exponent = "010001";
-        System.out.println(RSAUtils.encrypt("12345678", modulus, exponent));
-    }
-
 }

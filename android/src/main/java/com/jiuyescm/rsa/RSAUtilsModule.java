@@ -39,18 +39,4 @@ public class RSAUtilsModule extends ReactContextBaseJavaModule {
         }
     }
 
-    @ReactMethod
-    public void encryptWithCallback(String plainText, String modulus, String exponent, Callback callback) {
-        try {
-            String encryptString = RSAUtils.encrypt(plainText, modulus, exponent);
-            if (encryptString != null) {
-                callback.invoke("success", encryptString);
-            } else {
-                callback.invoke("error", "Result is null");
-            }
-        } catch (Exception e) {
-            callback.invoke("error", e.getMessage());
-        }
-    }
-
 }
