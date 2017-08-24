@@ -3,6 +3,7 @@
  */
 package com.jiuyescm.rsa;
 
+import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -35,6 +36,20 @@ public class RSAUtilsModule extends ReactContextBaseJavaModule {
             }
         } catch (Exception e) {
             promise.reject("error", e.getMessage());
+        }
+    }
+
+    @ReactMethod
+    public void encrypt(String plainText, String modulus, String exponent, Callback callback) {
+        try {
+            String encryptString = RSAUtils.encrypt(plainText, modulus, exponent);
+            if (encryptString != null) {
+                callback.invoke("success", encryptString);
+            } else {
+                callback.invoke("error", "Result is null");
+            }
+        } catch (Exception e) {
+            callback.invoke("error", e.getMessage());
         }
     }
 
