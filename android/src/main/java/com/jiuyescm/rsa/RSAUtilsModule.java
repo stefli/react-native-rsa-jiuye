@@ -40,7 +40,7 @@ public class RSAUtilsModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void encrypt(String plainText, String modulus, String exponent, Callback callback) {
+    public void encryptWithCallback(String plainText, String modulus, String exponent, Callback callback) {
         try {
             String encryptString = RSAUtils.encrypt(plainText, modulus, exponent);
             if (encryptString != null) {
