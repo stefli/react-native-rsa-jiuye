@@ -1,12 +1,12 @@
 {
-  "name": "react-native-rsa-jiuye",
+  "name": "@jiuye/react-native-rsa-jiuye",
   "version": "0.0.3",
   "author": "Stefli http://stefli.me",
   "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stefli/react-native-rsa-jiuye.git"
+    "url": "git+https://github.com/stefli/react-native-rsa-jiuye.git"
   },
   "bugs": {
     "url": "https://github.com/stefli/react-native-rsa-jiuye/issues"
@@ -23,5 +23,7 @@
   },
   "peerDependencies": {
     "react-native": ">=0.44.0"
-  }
+  },
+  "description": "RSA native module for Android",
+  "main": "index.android.js"
 }
