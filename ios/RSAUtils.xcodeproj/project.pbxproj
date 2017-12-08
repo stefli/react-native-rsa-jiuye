@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDBEBA111FD9413100B7CF19 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEBA0A1FD9413100B7CF19 /* BasicEncodingRules.m */; };
+		CDBEBA121FD9413100B7CF19 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEBA0C1FD9413100B7CF19 /* NSData+Base64.m */; };
+		CDBEBA131FD9413100B7CF19 /* NSData+RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEBA0E1FD9413100B7CF19 /* NSData+RSA.m */; };
+		CDBEBA141FD9413100B7CF19 /* RSAPubKey.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEBA101FD9413100B7CF19 /* RSAPubKey.m */; };
+		CDEFED831FD938FF00B6EF0D /* RSAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEFED821FD938FF00B6EF0D /* RSAUtils.m */; };
+		CDEFED841FD938FF00B6EF0D /* RSAUtils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDEFED811FD938FF00B6EF0D /* RSAUtils.h */; };
+		CDEFED8C1FD939A900B6EF0D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CDEFED8B1FD939A900B6EF0D /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDEFED7C1FD938FF00B6EF0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				CDEFED841FD938FF00B6EF0D /* RSAUtils.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CDBEBA091FD9413100B7CF19 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicEncodingRules.h; path = RSAUtils/BasicEncodingRules.h; sourceTree = "<group>"; };
+		CDBEBA0A1FD9413100B7CF19 /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicEncodingRules.m; path = RSAUtils/BasicEncodingRules.m; sourceTree = "<group>"; };
+		CDBEBA0B1FD9413100B7CF19 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "RSAUtils/NSData+Base64.h"; sourceTree = "<group>"; };
+		CDBEBA0C1FD9413100B7CF19 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "RSAUtils/NSData+Base64.m"; sourceTree = "<group>"; };
+		CDBEBA0D1FD9413100B7CF19 /* NSData+RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+RSA.h"; path = "RSAUtils/NSData+RSA.h"; sourceTree = "<group>"; };
+		CDBEBA0E1FD9413100B7CF19 /* NSData+RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+RSA.m"; path = "RSAUtils/NSData+RSA.m"; sourceTree = "<group>"; };
+		CDBEBA0F1FD9413100B7CF19 /* RSAPubKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSAPubKey.h; path = RSAUtils/RSAPubKey.h; sourceTree = "<group>"; };
+		CDBEBA101FD9413100B7CF19 /* RSAPubKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSAPubKey.m; path = RSAUtils/RSAPubKey.m; sourceTree = "<group>"; };
+		CDEFED7E1FD938FF00B6EF0D /* libRSAUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRSAUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEFED811FD938FF00B6EF0D /* RSAUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAUtils.h; sourceTree = "<group>"; };
+		CDEFED821FD938FF00B6EF0D /* RSAUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAUtils.m; sourceTree = "<group>"; };
+		CDEFED8B1FD939A900B6EF0D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = RSAUtils/README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDEFED7B1FD938FF00B6EF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDBEBA151FD9414000B7CF19 /* RSAPubKey */ = {
+			isa = PBXGroup;
+			children = (
+				CDEFED8B1FD939A900B6EF0D /* README.md */,
+				CDBEBA091FD9413100B7CF19 /* BasicEncodingRules.h */,
+				CDBEBA0A1FD9413100B7CF19 /* BasicEncodingRules.m */,
+				CDBEBA0B1FD9413100B7CF19 /* NSData+Base64.h */,
+				CDBEBA0C1FD9413100B7CF19 /* NSData+Base64.m */,
+				CDBEBA0D1FD9413100B7CF19 /* NSData+RSA.h */,
+				CDBEBA0E1FD9413100B7CF19 /* NSData+RSA.m */,
+				CDBEBA0F1FD9413100B7CF19 /* RSAPubKey.h */,
+				CDBEBA101FD9413100B7CF19 /* RSAPubKey.m */,
+			);
+			name = RSAPubKey;
+			sourceTree = "<group>";
+		};
+		CDEFED751FD938FF00B6EF0D = {
+			isa = PBXGroup;
+			children = (
+				CDBEBA151FD9414000B7CF19 /* RSAPubKey */,
+				CDEFED801FD938FF00B6EF0D /* RSAUtils */,
+				CDEFED7F1FD938FF00B6EF0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDEFED7F1FD938FF00B6EF0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDEFED7E1FD938FF00B6EF0D /* libRSAUtils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDEFED801FD938FF00B6EF0D /* RSAUtils */ = {
+			isa = PBXGroup;
+			children = (
+				CDEFED811FD938FF00B6EF0D /* RSAUtils.h */,
+				CDEFED821FD938FF00B6EF0D /* RSAUtils.m */,
+			);
+			path = RSAUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDEFED7D1FD938FF00B6EF0D /* RSAUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDEFED871FD938FF00B6EF0D /* Build configuration list for PBXNativeTarget "RSAUtils" */;
+			buildPhases = (
+				CDEFED7A1FD938FF00B6EF0D /* Sources */,
+				CDEFED7B1FD938FF00B6EF0D /* Frameworks */,
+				CDEFED7C1FD938FF00B6EF0D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSAUtils;
+			productName = RSAUtils;
+			productReference = CDEFED7E1FD938FF00B6EF0D /* libRSAUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDEFED761FD938FF00B6EF0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "小莫";
+				TargetAttributes = {
+					CDEFED7D1FD938FF00B6EF0D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CDEFED791FD938FF00B6EF0D /* Build configuration list for PBXProject "RSAUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDEFED751FD938FF00B6EF0D;
+			productRefGroup = CDEFED7F1FD938FF00B6EF0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDEFED7D1FD938FF00B6EF0D /* RSAUtils */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDEFED7A1FD938FF00B6EF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBEBA131FD9413100B7CF19 /* NSData+RSA.m in Sources */,
+				CDBEBA111FD9413100B7CF19 /* BasicEncodingRules.m in Sources */,
+				CDBEBA121FD9413100B7CF19 /* NSData+Base64.m in Sources */,
+				CDEFED8C1FD939A900B6EF0D /* README.md in Sources */,
+				CDBEBA141FD9413100B7CF19 /* RSAPubKey.m in Sources */,
+				CDEFED831FD938FF00B6EF0D /* RSAUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CDEFED851FD938FF00B6EF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDEFED861FD938FF00B6EF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDEFED881FD938FF00B6EF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CDEFED891FD938FF00B6EF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDEFED791FD938FF00B6EF0D /* Build configuration list for PBXProject "RSAUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEFED851FD938FF00B6EF0D /* Debug */,
+				CDEFED861FD938FF00B6EF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDEFED871FD938FF00B6EF0D /* Build configuration list for PBXNativeTarget "RSAUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEFED881FD938FF00B6EF0D /* Debug */,
+				CDEFED891FD938FF00B6EF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDEFED761FD938FF00B6EF0D /* Project object */;
+}
