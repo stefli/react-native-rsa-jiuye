@@ -1,5 +1,5 @@
 {
-  "name": "@jiuye/react-native-rsa-jiuye",
+  "name": "react-native-rsa-jiuye",
   "version": "0.0.3",
   "author": "Stefli http://stefli.me",
   "private": false,
@@ -24,6 +24,6 @@
   "peerDependencies": {
     "react-native": ">=0.44.0"
   },
-  "description": "RSA native module for Android",
-  "main": "index.android.js"
+  "description": "RSA native module for Android and IOS",
+  "main": "index.js"
 }
