@@ -19,6 +19,9 @@ RCT_EXPORT_METHOD(addEvent:(NSString *)name location:(NSString *)location)
 }
 RCT_EXPORT_METHOD(encrypt:(NSString *)password modulus:(NSString *)modulus exponent:(NSString *)exponent resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
+    if ([[modulus substringToIndex:2] compare:@"00"]==NSOrderedSame){
+        modulus = [modulus substringFromIndex:2];
+    }
     SecKeyRef pubKey = [RSAPubKey stringToRSAPubKey:modulus andExponent:exponent];
     if( pubKey == nil )
         return;
