@@ -19,6 +19,7 @@ import java.util.List;
  */
 public class RSAUtilsPackage implements ReactPackage {
 
+    @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new RSAUtilsModule(reactContext));
@@ -29,6 +30,7 @@ public class RSAUtilsPackage implements ReactPackage {
         return Collections.emptyList();
     }
 
+    @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }

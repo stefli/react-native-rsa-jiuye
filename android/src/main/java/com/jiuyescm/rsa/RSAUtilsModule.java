@@ -19,11 +19,13 @@ public class RSAUtilsModule extends ReactContextBaseJavaModule {
         super(reactContext);
     }
 
+    @Override
     public String getName() {
         return "RSAUtils";
     }
 
 
+    @ReactMethod
     public void encrypt(String plainText, String modulus, String exponent, Promise promise) {
         try {
             String encryptString = RSAUtils.encrypt(plainText, modulus, exponent);
